@@ -18,7 +18,7 @@ for db in ${DB_LIST[@]}; do
   BACKUP_FILEPATH="${SCRIPT_DIRPATH}/${BACKUP_DIRNAME}/${FILENAME_PREFIX}_${db}.sql"
 
   # execute backup
-  /usr/bin/mysqldump --defaults-file=$MYSQLCONF_FILEPATH $db > $BACKUP_FILEPATH
+  /usr/bin/mysqldump --defaults-file=$MYSQLCONF_FILEPATH $DUMP_OPTION $db > $BACKUP_FILEPATH
   chmod 700 $BACKUP_FILEPATH
 
   # remove old backup
