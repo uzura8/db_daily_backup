@@ -1,7 +1,11 @@
 #!/bin/sh
 # daily_backup/backup.sh
 
-. ./setting.conf
+# this script file path
+SCRIPT_DIRPATH=$(cd $(dirname $0);pwd)
+
+# load setting file
+. ${SCRIPT_DIRPATH}/setting.conf
 
 # backup dir name in this SCRIPT_DIRPATH
 BACKUP_DIRNAME="data"

@@ -1,6 +1,3 @@
-# this script file path
-SCRIPT_DIRPATH='/var/data/db_daily_backup'
-
 # mysql conf file path written username and password
 MYSQLCONF_FILEPATH='/root/.my.cnf'
 
