@@ -8,4 +8,4 @@ DB_LIST=('sampl_db_name')
 BACKUP_PERIOD=3
 
 # mysqldump options
-DUMP_OPTION="--quote-names --opt --skip-lock-tables --single-transaction --flush-logs --master-data=2"
+DUMP_OPTION="--quote-names --opt --skip-lock-tables --single-transaction --flush-logs --hex-blob --master-data=2"
